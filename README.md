@@ -1,4 +1,4 @@
-# Trabalho realizado no âmbito da cadeira de Cálculo de Programas
+# Trabalho de Cálculo de Programas
 ## Equipa de Trabalho:
 1. Benjamim Rodrigues
 2. Bianca Vale
