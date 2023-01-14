@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.13)  14 JAN 2023 03:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.13)  14 JAN 2023 23:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**relatorio.tex
-(./relatorio.tex
+**cp2223t.tex
+(./cp2223t.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -1099,12 +1099,12 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip58
 )
 \@indexfile=\write9
-\openout9 = `relatorio.idx'.
+\openout9 = `cp2223t.idx'.
 
 
-Writing index file relatorio.idx
-(./relatorio.aux)
-\openout1 = `relatorio.aux'.
+Writing index file cp2223t.idx
+No file cp2223t.aux.
+\openout1 = `cp2223t.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 294.
 LaTeX Font Info:    ... okay on input line 294.
@@ -1124,7 +1124,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 294.
 LaTeX Font Info:    ... okay on input line 294.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
 94.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -1177,10 +1177,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 294.
 LaTeX Info: Redefining \pageref on input line 294.
 LaTeX Info: Redefining \nameref on input line 294.
-
-(./relatorio.out) (./relatorio.out)
 \@outlinefile=\write10
-\openout10 = `relatorio.out'.
+\openout10 = `cp2223t.out'.
 
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1251,235 +1249,304 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 299.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 299.
-\openout8 = `relatorio.ptb'.
 
-\openout8 = `relatorio.ptb'.
 
-\openout8 = `relatorio.ptb'.
+LaTeX Warning: Reference `sec:documentacao' on page 1 undefined on input line 3
+31.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
- [1
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+
+LaTeX Warning: Reference `sec:mr' on page 1 undefined on input line 378.
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 419.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 419.
-\openout8 = `relatorio.ptb'.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
+\openout8 = `cp2223t.ptb'.
 
  <xymatrix 3x2
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 443.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 441.
 
 281>
-\openout8 = `relatorio.ptb'.
 
- [2]
-<cp2223t_media/tapete1.png, id=88, 486.81876pt x 486.81876pt>
+LaTeX Warning: Reference `fig:P1' on page 2 undefined on input line 446.
+
+\openout8 = `cp2223t.ptb'.
+
+
+LaTeX Warning: Reference `table:acmccs' on page 2 undefined on input line 490.
+
+[2]
+
+LaTeX Warning: Reference `fig:sierp1' on page 3 undefined on input line 534.
+
+<cp2223t_media/tapete1.png, id=53, 486.81876pt x 486.81876pt>
 File: cp2223t_media/tapete1.png Graphic file (type png)
 <use cp2223t_media/tapete1.png>
-Package pdftex.def Info: cp2223t_media/tapete1.png  used on input line 540.
+Package pdftex.def Info: cp2223t_media/tapete1.png  used on input line 538.
 (pdftex.def)             Requested size: 86.49748pt x 86.49449pt.
-<cp2223t_media/tapete2.png, id=90, 486.81876pt x 486.81876pt>
+<cp2223t_media/tapete2.png, id=55, 486.81876pt x 486.81876pt>
 File: cp2223t_media/tapete2.png Graphic file (type png)
 <use cp2223t_media/tapete2.png>
-Package pdftex.def Info: cp2223t_media/tapete2.png  used on input line 541.
+Package pdftex.def Info: cp2223t_media/tapete2.png  used on input line 539.
 (pdftex.def)             Requested size: 86.49748pt x 86.49449pt.
-<cp2223t_media/tapete3.png, id=91, 486.81876pt x 486.81876pt>
+<cp2223t_media/tapete3.png, id=56, 486.81876pt x 486.81876pt>
 File: cp2223t_media/tapete3.png Graphic file (type png)
 <use cp2223t_media/tapete3.png>
-Package pdftex.def Info: cp2223t_media/tapete3.png  used on input line 542.
+Package pdftex.def Info: cp2223t_media/tapete3.png  used on input line 540.
 (pdftex.def)             Requested size: 86.49748pt x 86.49449pt.
-<cp2223t_media/tapete4.png, id=92, 486.81876pt x 486.81876pt>
+<cp2223t_media/tapete4.png, id=57, 486.81876pt x 486.81876pt>
 File: cp2223t_media/tapete4.png Graphic file (type png)
 <use cp2223t_media/tapete4.png>
-Package pdftex.def Info: cp2223t_media/tapete4.png  used on input line 543.
+Package pdftex.def Info: cp2223t_media/tapete4.png  used on input line 541.
 (pdftex.def)             Requested size: 86.49748pt x 86.49449pt.
-<cp2223t_media/tapete5.png, id=93, 486.81876pt x 486.81876pt>
+<cp2223t_media/tapete5.png, id=58, 486.81876pt x 486.81876pt>
 File: cp2223t_media/tapete5.png Graphic file (type png)
 <use cp2223t_media/tapete5.png>
-Package pdftex.def Info: cp2223t_media/tapete5.png  used on input line 544.
+Package pdftex.def Info: cp2223t_media/tapete5.png  used on input line 542.
 (pdftex.def)             Requested size: 86.49748pt x 86.49449pt.
-<cp2223t_media/tapete_ex.png, id=95, 819.06pt x 819.06pt>
+
+LaTeX Warning: Reference `fig:sierp1' on page 3 undefined on input line 548.
+
+<cp2223t_media/tapete_ex.png, id=59, 819.06pt x 819.06pt>
 File: cp2223t_media/tapete_ex.png Graphic file (type png)
 <use cp2223t_media/tapete_ex.png>
-Package pdftex.def Info: cp2223t_media/tapete_ex.png  used on input line 555.
+Package pdftex.def Info: cp2223t_media/tapete_ex.png  used on input line 553.
 (pdftex.def)             Requested size: 159.33821pt x 159.33487pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3 <./cp2223t_media/tapete1.png> <./cp2223t_media/tapete2.png> <./cp2223t_media
 /tapete3.png> <./cp2223t_media/tapete4.png> <./cp2223t_media/tapete5.png>]
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
 
-\openout8 = `relatorio.ptb'.
 
-\openout8 = `relatorio.ptb'.
+LaTeX Warning: Reference `fig:sierp2' on page 4 undefined on input line 569.
 
+
+LaTeX Warning: Reference `fig:roseTreeSierp' on page 4 undefined on input line 
+569.
+
+
+LaTeX Warning: Reference `fig:sierp2' on page 4 undefined on input line 594.
+
+
+LaTeX Warning: Reference `fig:sierp2' on page 4 undefined on input line 594.
+
+\openout8 = `cp2223t.ptb'.
+
+
+LaTeX Warning: Reference `sec:codigo' on page 4 undefined on input line 609.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
 
 [4 <./cp2223t_media/tapete_ex.png>]
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
 
-Overfull \hbox (1.20201pt too wide) in paragraph at lines 669--670
+Overfull \hbox (1.20201pt too wide) in paragraph at lines 667--668
 []\OT1/ptm/m/n/10 Definir a fun[][]ao que apresenta a constru[][]ao do tapete d
 e Sierpinski como []e apresentada em $[]$,
  []
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
+
+
+LaTeX Warning: Reference `sec:probabilities' on page 5 undefined on input line 
+691.
 
 [5]
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7
-50.
+48.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<cp2223t_media/wcup2022.png, id=143, 2454.16875pt x 1385.175pt>
+
+LaTeX Warning: Reference `fig:wcup22' on page 6 undefined on input line 752.
+
+<cp2223t_media/wcup2022.png, id=102, 2454.16875pt x 1385.175pt>
 File: cp2223t_media/wcup2022.png Graphic file (type png)
 <use cp2223t_media/wcup2022.png>
-Package pdftex.def Info: cp2223t_media/wcup2022.png  used on input line 757.
+Package pdftex.def Info: cp2223t_media/wcup2022.png  used on input line 755.
 (pdftex.def)             Requested size: 306.77034pt x 173.14645pt.
 
-Underfull \hbox (badness 1077) in paragraph at lines 768--770
+LaTeX Warning: Reference `fig:wcup22' on page 6 undefined on input line 761.
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 766--768
 \OT1/ptm/m/n/10 A vis[]ao composicional da equipa permitiu-lhe perceber desde l
 ogo que o problema podia ser dividido,
  []
 
 [6 <./cp2223t_media/wcup2022.png>]
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
- [7]
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
-\openout8 = `relatorio.ptb'.
-
- [8]
-
-LaTeX Warning: Citation `Kn92' on page 9 undefined on input line 983.
+\openout8 = `cp2223t.ptb'.
 
 
-LaTeX Warning: Citation `Ol18' on page 9 undefined on input line 1050.
+
+LaTeX Warning: Reference `fig:wcup22' on page 7 undefined on input line 798.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+[7]
+\openout8 = `cp2223t.ptb'.
+
+
+
+LaTeX Warning: Reference `sec:probabilities' on page 8 undefined on input line 
+901.
+
+
+LaTeX Warning: Reference `sec:probabilities' on page 8 undefined on input line 
+901.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+\openout8 = `cp2223t.ptb'.
+
+
+LaTeX Warning: Reference `sec:resolucao' on page 8 undefined on input line 969.
+
+
+[8]
+
+LaTeX Warning: Citation `Kn92' on page 9 undefined on input line 981.
+
+
+LaTeX Warning: Reference `sec:resolucao' on page 9 undefined on input line 1030
+.
+
+
+LaTeX Warning: Reference `sec:codigo' on page 9 undefined on input line 1042.
+
+
+LaTeX Warning: Citation `Ol18' on page 9 undefined on input line 1048.
 
 [9] <xymatrix 2x2 191>
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1083.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1081.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1083.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1081.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1083.
+(hyperref)                removing `subscript' on input line 1081.
 
 
-LaTeX Warning: Citation `Ol18' on page 10 undefined on input line 1087.
+LaTeX Warning: Citation `Ol18' on page 10 undefined on input line 1085.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
 
-LaTeX Warning: Citation `Ol18' on page 10 undefined on input line 1138.
+LaTeX Warning: Citation `Ol18' on page 10 undefined on input line 1136.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
 [10]
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
 
 
-LaTeX Warning: Citation `EK06' on page 11 undefined on input line 1233.
+LaTeX Warning: Citation `EK06' on page 11 undefined on input line 1231.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
 [11]
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
  [12]
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
  [13]
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1625   \equiv
+l.1623   \equiv
                { \ensuremath{\conj{\conj{\Varid{g}}{\Varid{h}}}{\Varid{f}}} ...
 
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1627 
+l.1625 
        
 ? 
 [14]
@@ -1490,47 +1557,47 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1683 \just\equiv{ regra recursividade mútua }
+l.1680 \just\equiv{ regra recursividade mútua }
                                                 
 ? 
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.1683 \just\equiv{ regra recursividade mútua }
+l.1680 \just\equiv{ regra recursividade mútua }
                                                 
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1683 \just\equiv{ regra recursividade mútua }
+l.1680 \just\equiv{ regra recursividade mútua }
                                                 
 ? 
 ! Misplaced alignment tab character &.
 \just #1#2->\\ &#1&
                     \rule {2em}{0pt} \{ \mbox {\rule [-.7em]{0pt}{1.8em} \sm...
-l.1683 \just\equiv{ regra recursividade mútua }
+l.1680 \just\equiv{ regra recursividade mútua }
                                                 
 ? 
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.1683 \just\equiv{ regra recursividade mútua }
+l.1680 \just\equiv{ regra recursividade mútua }
                                                 
 ? 
 ! Misplaced alignment tab character &.
 \just ...}{1.8em} \small #2 \/} \} \nonumber \\ &&
                                                    
-l.1683 \just\equiv{ regra recursividade mútua }
+l.1680 \just\equiv{ regra recursividade mútua }
                                                 
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1685 
+l.1682 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1683--1685
+Underfull \hbox (badness 10000) in paragraph at lines 1680--1682
 
  []
 
@@ -1541,47 +1608,47 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1689 \just\equiv{ lei da troca (2 vezes)}
+l.1686 \just\equiv{ lei da troca (2 vezes)}
                                            
 ? 
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.1689 \just\equiv{ lei da troca (2 vezes)}
+l.1686 \just\equiv{ lei da troca (2 vezes)}
                                            
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1689 \just\equiv{ lei da troca (2 vezes)}
+l.1686 \just\equiv{ lei da troca (2 vezes)}
                                            
 ? 
 ! Misplaced alignment tab character &.
 \just #1#2->\\ &#1&
                     \rule {2em}{0pt} \{ \mbox {\rule [-.7em]{0pt}{1.8em} \sm...
-l.1689 \just\equiv{ lei da troca (2 vezes)}
+l.1686 \just\equiv{ lei da troca (2 vezes)}
                                            
 ? 
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.1689 \just\equiv{ lei da troca (2 vezes)}
+l.1686 \just\equiv{ lei da troca (2 vezes)}
                                            
 ? 
 ! Misplaced alignment tab character &.
 \just ...}{1.8em} \small #2 \/} \} \nonumber \\ &&
                                                    
-l.1689 \just\equiv{ lei da troca (2 vezes)}
+l.1686 \just\equiv{ lei da troca (2 vezes)}
                                            
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1691 
+l.1688 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1689--1691
+Underfull \hbox (badness 10000) in paragraph at lines 1686--1688
 
  []
 
@@ -1592,47 +1659,47 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1695 ...iv{ propriedade dada nas aulas, ficha 3}
+l.1692 ...iv{ propriedade dada nas aulas, ficha 3}
                                                   
 ? 
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.1695 ...iv{ propriedade dada nas aulas, ficha 3}
+l.1692 ...iv{ propriedade dada nas aulas, ficha 3}
                                                   
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1695 ...iv{ propriedade dada nas aulas, ficha 3}
+l.1692 ...iv{ propriedade dada nas aulas, ficha 3}
                                                   
 ? 
 ! Misplaced alignment tab character &.
 \just #1#2->\\ &#1&
                     \rule {2em}{0pt} \{ \mbox {\rule [-.7em]{0pt}{1.8em} \sm...
-l.1695 ...iv{ propriedade dada nas aulas, ficha 3}
+l.1692 ...iv{ propriedade dada nas aulas, ficha 3}
                                                   
 ? 
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.1695 ...iv{ propriedade dada nas aulas, ficha 3}
+l.1692 ...iv{ propriedade dada nas aulas, ficha 3}
                                                   
 ? 
 ! Misplaced alignment tab character &.
 \just ...}{1.8em} \small #2 \/} \} \nonumber \\ &&
                                                    
-l.1695 ...iv{ propriedade dada nas aulas, ficha 3}
+l.1692 ...iv{ propriedade dada nas aulas, ficha 3}
                                                   
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1697 
+l.1694 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1695--1697
+Underfull \hbox (badness 10000) in paragraph at lines 1692--1694
 
  []
 
@@ -1643,272 +1710,137 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1702 \just\equiv{ definição de for b i}
+l.1699 \just\equiv{ definição de for b i}
                                            
 ? 
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.1702 \just\equiv{ definição de for b i}
+l.1699 \just\equiv{ definição de for b i}
                                            
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1702 \just\equiv{ definição de for b i}
+l.1699 \just\equiv{ definição de for b i}
                                            
 ? 
 ! Misplaced alignment tab character &.
 \just #1#2->\\ &#1&
                     \rule {2em}{0pt} \{ \mbox {\rule [-.7em]{0pt}{1.8em} \sm...
-l.1702 \just\equiv{ definição de for b i}
+l.1699 \just\equiv{ definição de for b i}
                                            
 ? 
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.1702 \just\equiv{ definição de for b i}
+l.1699 \just\equiv{ definição de for b i}
                                            
 ? 
 ! Misplaced alignment tab character &.
 \just ...}{1.8em} \small #2 \/} \} \nonumber \\ &&
                                                    
-l.1702 \just\equiv{ definição de for b i}
+l.1699 \just\equiv{ definição de for b i}
                                            
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1704 
+l.1701 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1702--1704
+Underfull \hbox (badness 10000) in paragraph at lines 1699--1701
 
  []
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
+<cp2223t_media/foto1.png, id=218, 931.48pt x 179.67125pt>
+File: cp2223t_media/foto1.png Graphic file (type png)
+<use cp2223t_media/foto1.png>
+Package pdftex.def Info: cp2223t_media/foto1.png  used on input line 1739.
+(pdftex.def)             Requested size: 318.66948pt x 61.46574pt.
 [15]
-\openout8 = `relatorio.ptb'.
+<cp2223t_media/foto2.png, id=223, 941.5175pt x 182.6825pt>
+File: cp2223t_media/foto2.png Graphic file (type png)
+<use cp2223t_media/foto2.png>
+Package pdftex.def Info: cp2223t_media/foto2.png  used on input line 1747.
+(pdftex.def)             Requested size: 318.66948pt x 61.82968pt.
+<cp2223t_media/foto3.png, id=224, 322.20375pt x 125.46875pt>
+File: cp2223t_media/foto3.png Graphic file (type png)
+<use cp2223t_media/foto3.png>
+Package pdftex.def Info: cp2223t_media/foto3.png  used on input line 1755.
+(pdftex.def)             Requested size: 159.33821pt x 62.04881pt.
+ <xymatrix 3x2
 
-\openout8 = `relatorio.ptb'.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1773.
 
+281>
+\openout8 = `cp2223t.ptb'.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Undefined control sequence.
-<argument> ...nt postaux (Term _ v) x = foldr (\f 
-                                                  c -> postaux f c) x v
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Extra }, or forgotten $.
-\mbox  #1->\leavevmode \hbox {#1}
-                                 
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Undefined control sequence.
-<argument> ...nt postaux (Term _ v) x = foldr (\f 
-                                                  c -> postaux f c) x v
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Extra }, or forgotten $.
-\mbox  #1->\leavevmode \hbox {#1}
-                                 
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Undefined control sequence.
-<argument> ...nt postaux (Term _ v) x = foldr (\f 
-                                                  c -> postaux f c) x v
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Extra }, or forgotten $.
-\mbox  #1->\leavevmode \hbox {#1}
-                                 
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1789 \end{hscode}
-                   \resethooks
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1789 \end{hscode}
-                   \resethooks
-? 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
+
+ <xymatrix 2x2 191> <xymatrix 2x2 191> [16 <./cp2223t_media/foto1.png> <./cp222
+3t_media/foto2.png> <./cp2223t_media/foto3.png>] <xymatrix 2x3 380>
+\openout8 = `cp2223t.ptb'.
 
 
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
+<xymatrix 2x2 191>
+\openout8 = `cp2223t.ptb'.
 
+ <xymatrix 2x2 191> [17]
+\openout8 = `cp2223t.ptb'.
 
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
+\openout8 = `cp2223t.ptb'.
 
+\openout8 = `cp2223t.ptb'.
 
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
+ <xymatrix 2x2
 
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][][][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][][][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][][][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-
-Overfull \hbox (42.663pt too wide) in paragraph at lines 1792--1834
- [][] 
- []
-
-<xymatrix 2x2 191> [16] <xymatrix 2x2
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1879.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 2075.
 
 191>
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+\openout8 = `cp2223t.ptb'.
 
-\openout8 = `relatorio.ptb'.
+ [18] (./cp2223t.ind [19] [20
 
 
-No file relatorio.ind.
-No file relatorio.bbl.
-[17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1984.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1984.
- (./relatorio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1984.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1984.
+])
+No file cp2223t.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2119.
+(./cp2223t.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2119.
 
-Package rerunfilecheck Info: File `relatorio.out' has not changed.
-(rerunfilecheck)             Checksum: D2B74638B2072E05707293C4C2048A4D;551.
 
+
+Package rerunfilecheck Warning: File `cp2223t.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `cp2223t.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D2B74638B2072E05707293C4C2048A4D;551.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1984.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2119.
  ) 
 Here is how much of TeX's memory you used:
- 30527 strings out of 483107
- 570144 string characters out of 5964564
- 919635 words of memory out of 5000000
- 44804 multiletter control sequences out of 15000+600000
+ 30549 strings out of 483107
+ 570623 string characters out of 5964564
+ 918447 words of memory out of 5000000
+ 44821 multiletter control sequences out of 15000+600000
  607545 words of font info for 192 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 68i,21n,99p,3296b,1403s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,21n,99p,3294b,1404s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{section.3.17} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -1931,10 +1863,10 @@ r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/xypic/xyatip10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/xypic/xybtip10.pfb>
-Output written on relatorio.pdf (17 pages, 549144 bytes).
+Output written on cp2223t.pdf (20 pages, 619302 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 303 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

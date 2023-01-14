@@ -159,15 +159,13 @@
 
 \begin{center}\large
 \begin{tabular}{ll}
-Grupo nr. & 99 (preencher)
+Grupo nr. & 25
 \\\hline
-a11111 & Nome1 (preencher)
+a95835 & Bianca Araújo do Vale
 \\
-a22222 & Nome2 (preencher)
+a97327 & Daniel José Silva Furtado
 \\
-a33333 & Nome3 (preencher)
-\\
-a44444 & Nome4 (preencher, se aplicável)
+a96897 & Nuno Miguel Leite da Costa
 \end{tabular}
 \end{center}
 
@@ -331,10 +329,10 @@ pública de \CP.}
 
 Precisamos pois da composição de |tax| com uma função de pós-processamento |post|,
 %
-\begin{spec}
+\begin{code}
 tudo :: [String] -> [[String]]
 tudo = post . tax
-\end{spec}
+\end{code}
 para obter o efeito que se mostra na tabela \ref{table:acmccs}.
 
 \begin{table}[ht!]
@@ -1136,8 +1134,7 @@ f . in = k . F |split (split g h) f|\\
 %
 
 
-Com o auxílio de duas funções é possível aplicar a recursividade múltipla neste problema. 
-São criadas 2 funções auxiliares g e h.   
+Com o auxílio de duas funções novas |g| e |h| é possível aplicar a recursividade múltipla neste problema.
 
 Sabendo que:
 
@@ -1236,70 +1233,217 @@ wrap = p2
 
 \end{code}
 
+
+
+Testes de performance:
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{cp2223t_media/foto1}
+  \caption{Teste de performance para a função já predefinida |f|.}
+  \label{fig:sierp2}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{cp2223t_media/foto2}
+  \caption{Teste de performance para a função |fbl| baseada em recursividade múltipla.}
+  \label{fig:sierp2}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.35\textwidth]{cp2223t_media/foto3}
+  \caption{Teste de verificação de resultados entre a função |f| e |fbl|.}
+  \label{fig:sierp2}
+\end{figure}
+
+
+
+
+
+
+
 \subsection*{Problema 2}
+
+
+\begin{eqnarray*}
+\xymatrix{
+  |Exp S S| & & S + S \times (|Exp S S|)^*\ar[ll]_{|inExp|} \\
+  S^*\ar@@/_1.5pc/[rr]_{|gene|}\ar[r]^(0.35){|out|}\ar[u]^{|tax|} & S + S \times S^*\ar[r]^(0.45){|funcA|} & S + S \times (S^*)^*\ar[u]_{id + id \times tax^*}
+}
+\end{eqnarray*}
+
+
+
+
 Gene de |tax|:
+
+
 \begin{code}
-
-gene = (id -|- id >< (auxiliar . map(drop 4))) . out
-gene = ola . out
-
-ola :: Either String (String, [String]) -> Either String (String, [[String]])
-ola (Left x) = Left x
-ola (Right (x,ys)) = Right (x,(auxiliar(map (drop 4) ys)))
 
 auxiliar :: [String] -> [[String]]
-auxiliar = myfoldr f []
-    where f x [] = [[x]]
-          f x (y:ys) = if isPrefixOf " " x then (x:y):ys else [x]:y:ys
+auxiliar = groupBy (\x y -> (head y) == ' ')
+
+funcA = (id -|- id >< (auxiliar . map(drop 4)))
+
+gene = funcA . out
 
 \end{code}
+
+
 Função de pós-processamento:
 \begin{code}
---post = undefined
-post exp = postHelper exp [[]]
 
-postHelper (Var v) caminhos = map (v:) caminhos
-postHelper (Term _ filhos) caminhos = myfoldr (\f c -> postHelper f c) caminhos filhos
---post = undefined
+post :: Exp String String -> [[String]]
+post (Var x) = [[x]]
+post (Term x ts) = [[x]] ++ concatMap (\t -> map (x:) (post t)) ts
 
---post :: Exp String String -> [[String]]
---post exp = postaux exp [[]]
-
---postaux :: Exp String String -> [[String]] -> [[String]]
---postaux (Var v) x = map (v:) x
---postaux (Term _ v) x = foldr (\f c -> postaux f c) x v
-tudo = post . tax
 \end{code}
 
+
+
+
 \subsection*{Problema 3}
+
+
+
+\begin{eqnarray*}
+\xymatrix@@C=2cm{
+    |Rose Square|
+&
+    |Square + Rose Square|^*
+           \ar[l]_-{|inRose|}
+\\
+     |Square >< Nat0|
+           \ar[r]_-{|gsp|}
+           \ar[u]^-{|ana(gsp)|}
+&
+     |Square >< (Square >< Nat0)|^*
+           \ar[u]_{|id >< map(ana(gsp))|}
+}
+\end{eqnarray*}
+
+
+
+\begin{eqnarray*}
+\xymatrix@@C=2cm{
+    |Rose Square|
+           \ar[d]_-{|cata(gr2l)|}
+           \ar[r]^-{|outRose|}
+&
+    |Square >< Rose Square|^*
+           \ar[d]^{|id >< map(cata(gr2l))|}
+\\
+     |Square|^*
+&
+     |Square >< (Square|^*)^*
+           \ar[l]^-{|gr2l|}
+}
+\end{eqnarray*}
+
+
+
+
+
+
+
+
+
+
+
+\begin{eqnarray*}
+\xymatrix{
+    |Square >< Nat0|
+           \ar[r]_-{|gsp|}
+           \ar[d]_-{|ana(gsp)|}
+&   
+    |Square >< (Square >< Nat0|)^*
+           \ar[d]^{|id >< map(ana(gsp))|}
+\\
+    |Rose Square|
+           \ar[d]_-{|cata(gr2l)|}
+           \ar@@/^1.5pc/[r]^{|outRose|}
+&
+    |Square >< Rose Square|^*
+           \ar[d]^{|id >< map(cata(gr2l))|}
+           \ar@@/^1.5pc/[l]^{|inRose|}
+\\
+     |Square|^*
+&
+     |Square >< (Square|^*)^*
+           \ar[l]^-{|gr2l|}
+}
+\end{eqnarray*}
+
+
+
+
+
+
+
 \begin{code}
+
 squares = anaRose gsq
 
---gsq = undefined
-gsq :: (Square,Int) -> Either Square [(Square,Int)]
-gsq (s,0) = Left s
-gsq x = Right (squaress x)
+gsq :: (Square,Int) -> (Square,[(Square,Int)])
+gsq (x,xs) = (auxaux x,auxsquare (x,xs))
+
+auxaux :: Square -> Square
+auxaux ((x,y),s) = ((x+1/3*s,y+1/3*s),s/3)
+
+auxsquare :: (Square,Int) -> [(Square,Int)]
+auxsquare (((x,y),side),d) = auxsquare' (((x,y),side),d) (side/3)
+
+auxsquare' :: (Square,Int) -> Side -> [(Square,Int)]
+auxsquare' (((x,y),side),0) nl = []
+auxsquare' (((x,y),side),d) nl = [(((x+i*nl, y+j*nl), nl),d-1) | i <- [0..2], j <- [0..2], (i, j) /= (1, 1)]
 
 rose2List = cataRose gr2l 
 
-gr2l = undefined
--- gr2l :: Either Square [[Square]] -> [Square]
--- gr2l Left s = [s]
--- gr2l Right ((x:xs):t) = 
+gr2l :: (a, [[a]]) -> [a]
+gr2l (s, sqs) = s : concat sqs
 
-squaress :: (Square,Int) -> [(Square,Int)]
-squaress (((x,y),side),d) =
-    let new_side = side/3
-        new_squares = [(((x+i*new_side, y+j*new_side), new_side),d+1) | i <- [0..2], j <- [0..2], not (i==1 && j==1)]
-    in new_squares
+\end{code}
 
-carpets = undefined
+---------------------------------------------------------------------
+
+\begin{eqnarray*}
+\xymatrix@@C=2cm{
+    |(Square|^*)^*
+&
+    |1 + (Square|^*|>< (Square|^*)^*)
+           \ar[l]_-{|inList|}
+\\
+     |Nat0|
+           \ar[r]_-{|genecarpets|}
+           \ar[u]^-{|ana(carpets)|}
+&
+     |1 + (Square|^*|>< Nat0)|
+           \ar[u]_{|id + id >< ana(carpets)|}
+}
+\end{eqnarray*}
+
+
+\begin{code}
+
+carpets = anaList genecarpets
+
+genecarpets :: Int -> Either () ([Square],Int)
+genecarpets 0 = i1 ()
+genecarpets x = i2 (sierpinski (((0,0),32),x-1),x-1)
+
 
 present = undefined
 \end{code}
 
 \subsection*{Problema 4}
 \subsubsection*{Versão não probabilística}
+
+
 
 
 
@@ -1326,6 +1470,56 @@ Diagrama correspondente ao |consolidate'|:
 
 
 
+
+Gene de |consolidate'|:
+
+Função responsável por somar todos os pontos de cada equipa de um grupo após a realização de todos os jogos do grupo.
+
+\begin{code}
+
+cgeneaux :: (Eq a, Num b) => (a,b)  -> [(a, b)] -> [(a, b)]
+cgeneaux (a,b) [] = [(a,b)]
+cgeneaux (a,b) ((x,y):t) | (a==x) = ((x,y+b):t) 
+                         | otherwise = (x,y):(cgeneaux(a,b) t)
+
+
+cgene :: (Eq a, Num b) => Either () ((a, b), [(a, b)]) -> [(a, b)]
+cgene (Left ()) = []
+cgene (Right ((a,b),l)) = cgeneaux (a,b) l
+
+
+\end{code}
+
+---------------------------------------------------------------------
+
+Função responsável por gerar as partidas de um grupo.
+
+\begin{code}
+criapar :: a -> [a] -> [(a,a)]
+criapar e [] = []
+criapar e (x:xs) = [(e,x)] ++ criapar e xs
+
+pairup :: Eq b => [b] -> [(b,b)]
+pairup [] = []
+pairup (x:t) = criapar x t ++ pairup t
+\end{code}
+
+---------------------------------------------------------------------
+
+Função que calcula o resultado entre duas equipas.
+
+\begin{code}
+matchResult :: (Match -> Maybe Team) -> Match -> [(Team,Int)]
+matchResult f (a,b) = 
+            case f (a,b) of
+              Just x -> if x == a then [(a,3),(b,0)] else [(b,3),(a,0)]
+              Nothing -> [(a,1),(b,1)]
+
+\end{code}
+
+---------------------------------------------------------------------
+
+
 Diagrama correspondente ao |glt|:
 
 \begin{eqnarray*}
@@ -1337,60 +1531,22 @@ Diagrama correspondente ao |glt|:
 \\
      |B|^*
            \ar[r]_-{|glt|}
-           \ar[u]^-{|initKnot|}
+           \ar[u]^-{|initKnockoutStage|}
 &
      |B+B|^*|><B|^*
-           \ar[u]_{|id|}
+           \ar[u]_{|id + initKnockoutStage >< initKnockoutStage|}
 }
 \end{eqnarray*}
 
 
 
-
-
-Gene de |consolidate'|:
-
-
-
 \begin{code}
-
-
-
-cgeneaux :: (Eq a, Num b) => (a,b)  -> [(a, b)] -> [(a, b)]
-cgeneaux (a,b) [] = [(a,b)]
-cgeneaux (a,b) ((x,y):t) = if (a==x) then  ((x,y+b):t) else (x,y):(cgeneaux(a,b) t)
-
-cgene :: (Eq a, Num b) => Either () ((a, b), [(a, b)]) -> [(a, b)]
-cgene (Left ()) = []
-cgene (Right ((a,b),l)) = cgeneaux (a,b) l
-
-
-\end{code}
-Geração dos jogos da fase de grupos:
-\begin{code}
-criapar :: a -> [a] -> [(a,a)]
-criapar e [] = []
-criapar e (x:xs) = [(e,x)] ++ criapar e xs
-
-pairup :: Eq b => [b] -> [(b,b)]
-pairup [] = []
-pairup (x:t) = criapar x t ++ pairup t
-
-
-matchResult :: (Match -> Maybe Team) -> Match -> [(Team,Int)]
-matchResult f (a,b) = 
-            case f (a,b) of
-              Just a -> [(a,3)] ++ [(b,0)]
-              Just b -> [(b,3)] ++ [(a,0)]
-              Nothing -> [(a,1),(b,1)]
-
 glt :: [b] -> Either b ([b],[b])
 glt [x] = i1 x
 glt l = i2 (take half l, drop half l)
       where half = (length l) `div` 2
 
--- glt (x:xs) = (Right )
---glt = undefined
+
 \end{code}
 \subsubsection*{Versão probabilística}
 \begin{code}
