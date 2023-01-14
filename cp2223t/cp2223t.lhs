@@ -1116,7 +1116,117 @@ Valoriza-se a escrita de \emph{pouco} código que corresponda a soluções
 simples e elegantes.
 
 \subsection*{Problema 1}
+
+
+
+Justificação do Problema 1:
+
+Este problema foi resolvido através da lei da recursividade mútua com a ajuda da lei abaixo.
+
+\begin{eqnarray*}
+\begin{cases}
+g . in = l . F |split (split g h) f|\\
+h . in = j . F |split (split g h) f|\\
+f . in = k . F |split (split g h) f|\\
+\end{cases} 
+\end{eqnarray*}
+
+% 
+  \equiv{ |split (split g h ) f| = |cataNat (split (split l j) k|} 
+%
+
+
+Com o auxílio de duas funções é possível aplicar a recursividade múltipla neste problema. 
+São criadas 2 funções auxiliares g e h.   
+
+Sabendo que:
+
+\begin{eqnarray*}
+\begin{cases}
+|f a b c (n+3)| = |g a b c (n+1)|\\
+|f a b c (n+2)| = |g a b c n|\\
+|f a b c (n+2)| = |h a b c (n+1)|\\
+|f a b c (n+1)| = |h a b c n|
+\end{cases}
+\end{eqnarray*}
+
+Chegamos a isto:
+
+\begin{eqnarray*}
+\begin{cases}
+      \begin{cases}
+        |g  a  b  c  0| = 1\\
+        |g  a  b  c (n+1)| = a * |g a b c n| + b * |h a b c n| + c * |f a b c n|
+      \end{cases}\\
+      \begin{cases}
+        |h a b c 0| = 1\\  
+        |h a b c (n+1)| = |h a b c n|
+      \end{cases}\\
+      \begin{cases}
+        |f a b c 0| = 1\\
+        |f a b c (n+1)| = |f a b c n|
+      \end{cases}
+\end{cases}
+\end{eqnarray*}
+
+
+Com os valores obtidos em cima substituimos no sistema da lei da recursividade mútua.
+
+\begin{eqnarray*}
+\begin{cases}
+      \begin{cases}
+        |g  a  b  c  0| = a\\
+        |g  a  b  c (n+1)| = l2 ((|g a b c n|, |h a b c n|), |f a b c n|)
+      \end{cases}\\
+      \begin{cases}
+        |h a b c 0| = b\\  
+        |h a b c (n+1)| = j2 ((|g a b c n|, |h a b c n|), |f a b c n|)
+      \end{cases}\\
+      \begin{cases}
+        |f a b c 0| = c\\
+        |f a b c (n+1)| = k2 ((|g a b c n|, |h a b c n|), |f a b c n|)
+      \end{cases}
+\end{cases}
+\end{eqnarray*}
+
+%
+\just\equiv{ regra recursividade mútua }
+%
+
+|split (split g h ) f| = |cataNat (split (split [const(a),l2] [const(b),j2]) [const(c),k2]|
+
+%
+\just\equiv{ lei da troca (2 vezes)}
+%
+
+|split (split g h ) f| = |cataNat (either (split (split (const a) (const b) ) (const c))     (split (split l2 j2) k2) |
+
+%
+\just\equiv{ propriedade dada nas aulas, ficha 3}
+%
+
+|split (split g h ) f| = |cataNat (either  (((a,b),c))      (split (split l2 j2) k2) )|
+
+
+%
+\just\equiv{ definição de for b i}
+%
+
+
+|split (split g h ) f| = for |(split ( split l2 j2) k2)| ((a,b),c)
+
+
+Substituindo ((a,b),c) por ((1,1),0) visto que é o caso inicial. 
+Substituindo l2 pela função auxliar |func| que multiplica os parâmetros respetivos por a, b e c e soma-os, j2 por p1 . p1 e k2 por p2.p1 então será possível chegar ao resultado.  
+
+
+
+
+
+    
 Funções auxiliares pedidas:
+
+
 \begin{code}
 
 func a b c ((x,y),z) = a*x+b*y+c*z
@@ -1130,7 +1240,7 @@ wrap = p2
 Gene de |tax|:
 \begin{code}
 
---gene = (id -|- id >< (auxiliar . map(drop 4))) . out
+gene = (id -|- id >< (auxiliar . map(drop 4))) . out
 gene = ola . out
 
 ola :: Either String (String, [String]) -> Either String (String, [[String]])
@@ -1190,7 +1300,58 @@ present = undefined
 
 \subsection*{Problema 4}
 \subsubsection*{Versão não probabilística}
+
+
+
+
+Diagrama correspondente ao |consolidate'|:
+
+\begin{eqnarray*}
+\xymatrix@@C=2cm{
+    |(A><B)|^*
+           \ar[d]_-{|consolidate'|}
+           \ar[r]^-{|outList|}
+&
+    |1 + ((A><B)><(A><B)|^*)
+           \ar[d]^{|id + id >< consolidate'|}
+\\
+     |(A><B)|^*
+&
+     |1+((A><B)><(A><B)|^*)
+           \ar[l]^-{|cgene|}
+}
+\end{eqnarray*}
+
+
+
+
+
+Diagrama correspondente ao |glt|:
+
+\begin{eqnarray*}
+\xymatrix@@C=2cm{
+    |LTree B|
+&
+    |B + LTree >< LTree|
+           \ar[l]_-{|inLTree|}
+\\
+     |B|^*
+           \ar[r]_-{|glt|}
+           \ar[u]^-{|initKnot|}
+&
+     |B+B|^*|><B|^*
+           \ar[u]_{|id|}
+}
+\end{eqnarray*}
+
+
+
+
+
 Gene de |consolidate'|:
+
+
+
 \begin{code}
 
 
